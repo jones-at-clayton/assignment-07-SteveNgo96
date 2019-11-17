@@ -1,0 +1,126 @@
+/*This is the external sheet where most of the sytle and formating the main page happens.*/
+/*header and  h3 are both center in the page with the font style is faster one.*/
+header{
+
+	color: #0000cc;
+	font-family: 'Faster One', cursive;	
+	font-size:30px;
+	font-style: italic;
+	font-weight: 100;
+	text-align: center;
+	line-height: 50px;
+}
+h3{
+	font-style: normal;
+	text-align: center;
+	font-size:30px;
+	color: #bc13fe;
+	font-family: 'Faster One', cursive;
+	padding: 10px 10px 5px;
+}
+/*p is a regular text where the font style is press start 2P and color green.*/
+p{
+	font-size: 12px;
+	text-indent: 30px;
+	color: #39ff14;
+	font-family: 'Press Start 2P', cursive;
+	padding: 0px 20px 20px;
+	line-height: 24px;
+	width: 100%;
+}
+/* intro is just an extension of p to help fit the text in a mobile screen.*/
+footer{
+	color: red;
+}
+body{
+	background-color: black;
+}
+*{
+	margin:0;
+	padding:0;
+}
+/*Organize the navigation to display the tabs in a straight line.*/
+nav{
+	color: red;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+nav ul{
+	padding: 0;
+	float: left;
+	border-top: 5px solid #39ff14;
+	border-bottom: 5px solid #39ff14;
+	
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+	
+	border-radius: 2em;
+	margin:0.3em;
+	padding:0.4em;
+}
+nav ul li a {
+	display: block;
+	font-family: 'Press Start 2P', cursive;
+	color: red;
+	font-size: 15px;
+	padding: 10px 14px;
+	text-decoration: none;
+}
+/*Links back to image.*/
+.dualshockers{
+	/*Style to create a fluid image*/
+	width: 100%;
+	float: none;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+/*Links back to the div.*/
+.wrapper {
+	/*margin:0 auto;*/
+	/* Making a flexible image*/
+	max-width: 100%;
+}
+@media screen and (min-width: 800px){
+	.wrapper {
+	margin:0 auto;
+	width: 600px;
+	padding: 20px 0px 0px;
+}
+header{
+	padding: 20px 0px 0px;
+}
+}
+/* allow a the website to fit in any screen from tablet to laptop*/
+@media screen and (min-width: 1000px){
+.wrapper {
+	margin:0 auto;
+	width: 1000px;
+	padding: 20px 20px 10px;
+	
+}
+header{
+
+	color: #0000cc;
+	font-family: 'Faster One', cursive;	
+	font-size:50px;
+	font-style: italic;
+	font-weight: 100;
+	text-align: center;
+	line-height: 100px;
+	padding: 20px 20px 10px;
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	position: relative;
+	
+	border-radius: 5em;
+	margin:0em;
+	padding:0em;
+}
+}

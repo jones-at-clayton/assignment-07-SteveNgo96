@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Forum</title>
+		<meta charset="utf-8">
+		<!--author meta tag-->
+		<meta name="author" content=" Steve Ngo">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faster+One&display=swap">
+		
+		<link rel="stylesheet" href="Style2.css">
+	<!-- Applying script tag for task 3--> 
+		<script src=js/alert.js></script>
+	</head>
+	<body>
+		<main>
+			<h1>Posting Forum</h1>
+			
+		<div class="tabs">
+		<nav>
+				<a href="PV3.html">Home</a> <!--&nbsp; &nbsp;-->
+				<a href="1link">Video Game #1</a> 
+				<a href="2link">Video Game #2</a> 
+				<a href="3link">Video Game #3</a> 
+				<a href="Groupslink">Groups</a>
+				<a href="Forum.html">Forum</a> 
+		</nav>
+		</div>
+		<div class="wrapper">
+			<form method="POST" action="PostingForum.php">
+			<p>Fill out your current topic to post.</p>
+				<label for="fName">First Name</label>
+					<input type="text" id="fName" name="firstname" placeholder="First Name...">
+				
+				<label for="lName">Last Name</label>
+					<input type="text" id="lName" name="lastname" placeholder="Last Name...">
+				
+				<label for="consoles"> What Consoles do you play</label>
+					<select id= "consoles" name="Type of Consoles">
+					<option>PS4</option>
+					<option>Xbox One</option>
+					<option>Switch</option>
+					<option>PC</option>
+					<option>IOS</option>
+					<option>ANDRIOD</option>
+				</select>
+				
+				<label for="topic">Topics</label>
+					<input type="text" id="topic" name="CurrentTopics" placeholder="Topic of discussion...">
+				
+				<label for="discussion">Discussion</label>
+					<textarea id="discussion" name="Discussion" placeholder= "Text..."></textarea>
+					
+				<label>Choose the level of difficulty</label>
+					<label>Noob<input type="radio" name="difficulty" value="noob"><br></label>	
+					<label>Casual<input type="radio" name="difficulty" value="casual"><br></label>
+					<label>Pro<input type="radio" name="difficulty" value="pro"><br></label>
+			
+				<label>Are you above the age of 18?:<input type="checkbox" name="matured"></label>
+		<!-- Task 4 applying onclick event handler for submit button.--> 
+				<button type="submit" id="submit" value="Send" onclick="myalert()">send</button>
+			</form>
+		</div>
+		</main>
+		<footer>
+			Contact Us:<br>
+			Email Address: Sngo1@student.clayton.edu<br>
+			Due Date: November 8, 2019
+		</footer>
+	</body>
+	
+</html>
